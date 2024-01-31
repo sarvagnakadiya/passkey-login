@@ -106,7 +106,7 @@ const Login = () => {
         challenge: Uint8Array.from("randomStringFromServer", (c) =>
           c.charCodeAt(0)
         ),
-        rpId: "https://passkey-login.vercel.app/",
+        rpId: "PassKey Login demo",
       },
       mediation: "optional",
     });

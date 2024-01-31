@@ -13,8 +13,8 @@ const Login = () => {
         c.charCodeAt(0)
       ),
       rp: {
-        name: "Duo Security",
-        id: "localhost", // Set a registrable domain suffix or equal to the current domain
+        name: "PassKey Login demo",
+        id: "https://passkey-login.vercel.app/", // Set a registrable domain suffix or equal to the current domain
       },
       user: {
         id: Uint8Array.from(username, (c) => c.charCodeAt(0)),
@@ -106,7 +106,7 @@ const Login = () => {
         challenge: Uint8Array.from("randomStringFromServer", (c) =>
           c.charCodeAt(0)
         ),
-        rpId: "localhost",
+        rpId: "https://passkey-login.vercel.app/",
       },
       mediation: "optional",
     });

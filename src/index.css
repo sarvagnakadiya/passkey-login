@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Light";
+  src: local("HelveticaNeueRegular"),
+    url("./fonts/san-francisco/SFNSText-RegularG2.otf") format("OpenType");
+}
+
+/* Set the color and width of the scroll bar for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #1a1a1a; /* Dark background color for the scrollbar track */
+}
+
+/* .min-h-screen-70 {
+  min-height: calc(100vh - 70px);
+} */
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+/* Set the color and width of the scroll bar for Firefox */
+/* Note: Firefox does not support styling the scroll bar directly, but you can use custom properties */
+/* For simplicity, this example uses the same color as WebKit browsers */
+::-moz-scrollbar {
+  width: 8px;
+  background-color: #1a1a1a; /* Dark background color for the scrollbar track */
+  border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+/* Set the color and width of the scroll bar for Edge (same as WebKit browsers) */
+/* Edge does not support these properties directly, so it will fall back to its default styling */
+
+/* Optional: Set the color of the track (the area the thumb moves along) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Optional: Set the track color to be transparent */
+}
+
+/* Optional: Set the color of the track for Firefox (same as WebKit browsers) */
+::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Optional: Set the color of the track for Edge (same as WebKit browsers) */
